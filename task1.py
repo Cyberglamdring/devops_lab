@@ -9,9 +9,8 @@ def markcount():
             student_marks[name] = scores
         query_name = input("NAME of student: ",)
 
-    x = sum(student_marks[query_name])/3
+    x = sum(student_marks[query_name]) / 3
     return x
-
 
 
 print(markcount())
