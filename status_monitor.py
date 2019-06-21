@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-import psutil, sched, time, sys
+import psutil
+import sched
+import time
+import sys
 from tee import Tee
 from config import settings
 
@@ -11,7 +14,7 @@ class snapshots(object):
         """PC metrics"""
 
         ss = sched.scheduler(time.time, time.sleep)
-        time_steps= int(settings['interval'])
+        time_steps = int(settings['interval'])
 
         print("SNAPSHOT: TIMESTAMP")
         print("CPU load             -", psutil.cpu_percent(interval=1), "%")
