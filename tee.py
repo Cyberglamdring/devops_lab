@@ -10,6 +10,6 @@ class Tee(object):
             f.write(obj)
             f.flush()   # If the output to be visible immediately
 
-    def flush(self) :
+    def flush(self):
         for f in self.files:
             f.flush()
