@@ -3,10 +3,9 @@ import requests
 username = input("Git login: ", )         # alenaPy
 token = input("Git token: ", )
 repo = input("Git repo: ", )              # devops_lab
-pull_num = input("Git pull number: ", )   # 23
+p_num = input("Git pull number: ", )   # 23
 
-repo_url = requests.get("https://api.github.com/repos/" + username + "/" + repo + "/pulls/" + 
-                        pull_num)
+repo_url = requests.get("https://api.github.com/repos/" + username + "/" + repo + "/pulls/" + p_num)
 
 gh_session = requests.Session()
 gh_session.auth = (username, token)
