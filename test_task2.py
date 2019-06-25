@@ -20,4 +20,3 @@ class TestPrime(TestCase):
 
     def tearDown(self):
         """Finsih"""
-        
