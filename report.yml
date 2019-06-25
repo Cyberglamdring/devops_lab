@@ -1,0 +1,30 @@
+python info:
+   All python versions: 0
+   PYTHONPATH: null
+   Pip version and installed packages:
+   - urllib3
+   - setuptools
+   - runcmd
+   - requests
+   - PyYAML
+   - public
+   - psutil
+   - prime
+   - pip
+   - nose
+   - idna
+   - git-status
+   - coverage
+   - construct
+   - configparser
+   - chardet
+   - certifi
+   - argparse
+   - github-pr-stats
+   - python-dateutil
+   - ordereddict
+   Python executable location: /home/student/.pyenv/versions/3.7.3/bin/python
+   Python site packages:
+   - /home/student/.pyenv/versions/3.7.3/lib/python3.7/site-packages
+   Python version & virtual environment: "3.7.3 (default, Jun 19 2019, 11:36:52) \n\
+      [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]"
