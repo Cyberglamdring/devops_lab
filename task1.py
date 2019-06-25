@@ -9,11 +9,11 @@ from pip import _internal
 
 
 print("---Python version & virtual environment---\n", sys.version, sep="")  # 1, 2
-print("---Python executable location---\n", sys.executable, sep="") # 3
+print("---Python executable location---\n", sys.executable, sep="")  # 3
 print("---Pip version and installed packages---")   # 4, 6
 _internal.main(['list'])
 pp = (input("Input you PYTHONPATH (/home/user/): "))
-print("---PYTHONPATH---\n", sys.path.append(pp),  sep="")  # 5
+print("---PYTHONPATH---\n", sys.path.append(pp), sep="")  # 5
 print("---Python site packages---\n", site.getsitepackages(), sep="")   # 7
 print("---Additional. All python versions and environments---")
 v = subprocess.call("ls /home/student/.pyenv/versions", shell=True)
