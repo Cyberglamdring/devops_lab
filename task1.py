@@ -16,7 +16,10 @@ pp = (input("Input you PYTHONPATH (/home/user/): "))
 print("---PYTHONPATH---\n", sys.path.append(pp), sep="")  # 5
 print("---Python site packages---\n", site.getsitepackages(), sep="")   # 7
 print("---Additional. All python versions and environments---")
-v = subprocess.call("ls /home/student/.pyenv/versions", shell=True)
+
+v = subprocess.run("ls /home/student/.pyenv/versions", shell=True, 
+                   stdout=subprocess.PIPE).stdout.decode('utf-8')
+v = v.split('\n')
 
 p = [p.project_name for p in pkg_resources.working_set]
 
