@@ -2,8 +2,8 @@
 import psutil
 import sched
 import time
-import sys
-from tee import Tee
+import json
+
 from config import settings
 
 
@@ -29,15 +29,15 @@ class snapshots(object):
     def builder(self):
         """Main code"""
 
-        outpfile = str(settings['output'])
+        outpfile = settings['output']
         with open(outpfile + ".json", "w", encoding="utf-8") as outfile:
             json.dump({"CPU load": psutil.cpu_percent(interval=1),
                        "Physical memory used": psutil.disk_usage('/'),
                        "Virtual memory used": psutil.virtual_memory()[2],
                        "IO information": psutil.Process().io_counters(),
-                       "Network information":  psutil.net_io_counters(pernic=True)},
+                       "Network information": psutil.net_io_counters(pernic=True)},
                       outfile, ensure_ascii=False, indent=2)
-        
+
         print(snapshot.pc_meter())
 
 
