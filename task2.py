@@ -9,4 +9,4 @@ def calc_factorial(x):
 
 if __name__ == "__main__":
     x = int(input("Intput the number: "))
-    print(calc_factorial())
+    print(calc_factorial(x))
