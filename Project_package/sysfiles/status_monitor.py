@@ -43,4 +43,3 @@ class snapshots(object):
 
 snapshot = snapshots()
 print(snapshot.builder())
-
