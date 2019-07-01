@@ -23,11 +23,14 @@ with open("pull_status.txt", "w") as f:
           "\nTitle name:", data["title"],
           "\nCreated at:", data["created_at"],
           "\nUpdated at:", data["updated_at"],
-          "\nComments:", data["comments"],
+          "\nNumber of comments created:", data["comments"],
           "\nCommits:", data["commits"],
           "\nAdditions:", data["additions"],
           "\nChanged files:", data["changed_files"],
           "\nDeletions files:", data["deletions"],
           "\nClosed:", data["closed_at"],
+          "\nUser who opened:", data["owner"]["login"],
+          "\nAttached labels:", data["labels"]["url"],
+          "\nDay of the week closed:", data["closed_at"],
           file=f)
     f.close()
